@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:websystems.css
 /* Michael Lam's comments
 For CSS: 
 a . means for a <div>
@@ -64,3 +65,94 @@ ol li {width: 1200px; font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT',
 #success {color: #F4DB7D}
 #money {color: #FF6A3D}
 #recycle {color:#9DAAF2}
+=======
+:root {
+    --black: #050517;
+    --white: #D3D5D7;
+    --color1: #CF5C36;
+    --color2: #EFC88B;
+    --color3: #F4E3B2;
+}
+
+.MenuButtons {
+    position: absolute;
+    width: 129px;
+    height: 38px;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: var(--btnFontColor);
+}
+
+#welcome {
+    height: 174px;
+    width: 622px;
+    left: -152px;
+    top: 258px;
+    border-radius: nullpx;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 174px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--fontColor);
+}
+
+#aboutme {
+    height: 450px;
+    width: 700px;
+    left: 813px;
+    top: 175px;
+    border-radius: nullpx;
+
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: justified;
+
+    color: var(--fontColor);
+}
+
+#version {
+    position: absolute;
+    width: 274px;
+    height: 38px;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: var(--color2);
+}
+
+.light-mode {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--color3);
+    --btnFontColor: var(--black);
+}
+
+.dark-mode {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--color1);
+    --btnFontColor: var(--white);
+}
+
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+>>>>>>> Stashed changes:main.css
