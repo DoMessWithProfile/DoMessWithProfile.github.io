@@ -6,12 +6,79 @@
     --color3: #F4E3B2;
 }
 
+/* 
+    <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900
+*/
+
+body {
+    background-color: #D3D5D7;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- top-navigation bar --- */
+
+.top-navigation {
+    background-color: #CF5C36;
+    border-radius: 0px 0px 25px 25px;
+    margin: auto;
+    height: 3em;
+    width: 32em;
+    padding-top: 1.6em;
+    text-align: center;
+}
+
+.nav-button {
+    background-color: #F4E3B2;
+    font-weight: 400;
+    border-radius: 25px;
+    /* padding */
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+/* --- index.html --- */
+
+#index-h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    margin: auto;
+    margin-top: 2.5em;
+    margin-left: 50px;
+}
+
+.index-description {
+    background-color:#EFC88B; 
+    border-radius: 25px 0px 0px 25px;
+    font-weight: 350;
+    text-align: left;
+    margin-left: 50em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 9em;
+}
+
+/* --- figma --- */
+
 .MenuButtons {
     position: absolute;
     width: 129px;
     height: 38px;
 
-    font-family: 'Bitter';
+    font-family: 'Bitter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
