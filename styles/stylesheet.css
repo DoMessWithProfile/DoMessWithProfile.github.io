@@ -33,6 +33,7 @@ a {
     width: 32em;
     padding-top: 1.6em;
     text-align: center;
+    grid-column: 1 / span 3;
 }
 
 .nav-button {
@@ -48,27 +49,50 @@ a {
     margin-right: 0.75em;
 }
 
+.nav-button:hover {
+    background-color: #EFC88B;
+}
+
 /* --- index.html --- */
 
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 3px solid #050517; */
+}
+
 #index-h1 {
+    float: right;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 5em;
     margin: auto;
-    margin-top: 2.5em;
-    margin-left: 50px;
+    margin-top: 3em;
+    margin-right: 1em;
 }
 
 .index-description {
+    grid-column: 2 / span 2;
     background-color:#EFC88B; 
     border-radius: 25px 0px 0px 25px;
-    font-weight: 350;
+    font-weight: 400;
+    font-size: 1.1em;
     text-align: left;
-    margin-left: 50em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    /* padding */
+    padding-top: 7em;
+    padding-bottom: 7em;
     padding-left: 3em;
-    padding-right: 9em;
+    padding-right: 10em;
+    margin-top: 4em;
+    margin-left: 14em;
+
+}
+
+.index-version {
+    text-align: right;
+    font-weight: 800;
+    grid-column: 1 / span 3;
+    margin-top: 4em;
 }
 
 /* --- figma --- */
