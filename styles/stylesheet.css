@@ -1,0 +1,264 @@
+:root {
+    --black: #050517;
+    --white: #D3D5D7;
+    --color1: #CF5C36;
+    --color2: #EFC88B;
+    --color3: #F4E3B2;
+}
+
+/* 
+    <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900
+*/
+
+body {
+    background-color: #D3D5D7;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- top-navigation bar --- */
+
+.top-navigation {
+    background-color: #CF5C36;
+    border-radius: 0px 0px 25px 25px;
+    margin: auto;
+    height: 3em;
+    width: 32em;
+    padding-top: 1.6em;
+    text-align: center;
+    grid-column: 1 / span 3;
+}
+
+.nav-button {
+    background-color: #F4E3B2;
+    color:#050517;
+    font-weight: 400;
+    border-radius: 25px;
+    /* padding */
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+.nav-button:hover {
+    background-color: #EFC88B;
+}
+
+/* --- index.html --- */
+
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 3px solid #050517; */
+}
+
+#index-h1 {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    margin: auto;
+    margin-top: 3em;
+    margin-right: 1em;
+}
+
+.index-description {
+    grid-column: 2 / span 2;
+    background-color:#EFC88B; 
+    border-radius: 25px 0px 0px 25px;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: left;
+    /* padding */
+    padding-top: 7em;
+    padding-bottom: 7em;
+    padding-left: 3em;
+    padding-right: 10em;
+    margin-top: 4em;
+    margin-left: 14em;
+
+}
+
+.index-version {
+    text-align: right;
+    font-weight: 800;
+    grid-column: 1 / span 3;
+    margin-top: 4em;
+}
+
+/* --- portfolio.html --- */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / span 3;
+}
+
+.games-button {
+    grid-column: 1;
+}
+.mods-button {
+    grid-column: 2;
+}
+.other-button {
+    grid-column: 3;
+}
+
+.portfolio-generic-button {
+    display: block;
+    background-color: #F4E3B2;
+    text-align: center;
+    border-radius: 25px;
+    width: 18em;
+    height: 18em;
+    margin-left: 5.5em;
+    transition-duration: 0.4s;
+}
+
+.portfolio-generic-button:hover {
+    background-color: #EFC88B;
+}
+
+#portfolio-generic-button {
+    color:#050517;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    padding-top: 4em;
+}
+
+.portfolio-description {
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#portfolio-h1 {
+    text-align: center;
+    grid-column: 1 / span 3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+#active-button {
+    background-color:#F4E3B2;
+    border-radius: 50px;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- figma --- */
+
+.MenuButtons {
+    position: absolute;
+    width: 129px;
+    height: 38px;
+
+    font-family: 'Bitter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: var(--btnFontColor);
+}
+
+#welcome {
+    /* height: 174px;
+    width: 622px;
+    left: -152px;
+    top: 258px; */
+    border-radius: nullpx;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 174px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--fontColor);
+}
+
+#aboutme {
+    /* height: 450px;
+    width: 700px;
+    left: 813px;
+    top: 175px; */
+    border-radius: nullpx;
+
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: justified;
+
+    color: var(--fontColor);
+}
+
+#version {
+    position: absolute;
+    width: 274px;
+    height: 38px;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: var(--color2);
+}
+
+.light-mode {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--color3);
+    --btnFontColor: var(--black);
+}
+
+.dark-mode {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--color1);
+    --btnFontColor: var(--white);
+}
+
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;
+*/
