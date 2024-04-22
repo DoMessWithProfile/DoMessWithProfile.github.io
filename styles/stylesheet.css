@@ -38,6 +38,7 @@ a {
 
 .nav-button {
     background-color: #F4E3B2;
+    color:#050517;
     font-weight: 400;
     border-radius: 25px;
     /* padding */
@@ -94,6 +95,89 @@ a {
     grid-column: 1 / span 3;
     margin-top: 4em;
 }
+
+/* --- portfolio.html --- */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / span 3;
+}
+
+.games-button {
+    grid-column: 1;
+}
+.mods-button {
+    grid-column: 2;
+}
+.other-button {
+    grid-column: 3;
+}
+
+.portfolio-generic-button {
+    display: block;
+    background-color: #F4E3B2;
+    text-align: center;
+    border-radius: 25px;
+    width: 18em;
+    height: 18em;
+    margin-left: 5.5em;
+    transition-duration: 0.4s;
+}
+
+.portfolio-generic-button:hover {
+    background-color: #EFC88B;
+}
+
+#portfolio-generic-button {
+    color:#050517;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    padding-top: 4em;
+}
+
+.portfolio-description {
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#portfolio-h1 {
+    text-align: center;
+    grid-column: 1 / span 3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+#active-button {
+    background-color:#F4E3B2;
+    border-radius: 50px;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* --- figma --- */
 
