@@ -6,6 +6,68 @@
     --color3: #F4E3B2;
 }
 
+/* Light/Dark Mode */
+
+body.light-mode {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+body.dark-mode {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--color1);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: var(--color2);
+}
+
+/* Animations */
+
+/* --- Scrolling Text Animation --- */
+
+@keyframes scroll-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.scroll-out {
+    animation: scroll-up 0.75s forwards;
+}
+
+.scroll-in {
+    animation: scroll-down 0.75s forwards;
+}
+
 /* 
     <uniquifier>: Use a unique and descriptive class name
     <weight>: Use a value from 100 to 900
@@ -70,11 +132,18 @@ a {
     margin: auto;
     margin-top: 3em;
     margin-right: 1em;
+    transition: opacity 1s ease-in; /* Add this line for the transition */
 }
+
+/* Class to trigger the transition */
+.fade-out {
+    opacity: 0;
+}
+
 
 .index-description {
     grid-column: 2 / span 2;
-    background-color:#EFC88B; 
+    background-color: var(--color1); 
     border-radius: 25px 0px 0px 25px;
     font-weight: 400;
     font-size: 1.1em;
